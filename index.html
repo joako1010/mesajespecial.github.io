@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FLORES</title>
+    <style>
+        body {
+            color: azure;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .greetings {
+            font-size: 6rem;
+            font-weight: 900;
+        }
+        .description {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #fbff00;
+        }
+        .button {
+            margin-top: 20px;
+        }
+        .button button {
+            background-color: yellow;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            position: relative;
+            border-radius: 20px;
+            transition: background-color 0.3s ease-in-out;
+            margin: 5px;
+        }
+        .button button:hover {
+            background-color: orange;
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+        }
+        .button a {
+            text-decoration: none;
+            color: #111;
+            display: inline-block;
+            background-color: yellow;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 5px;
+        }
+        .button a:hover {
+            background-color: orange;
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="greetings">
+        <span>M</span>
+        <span>I</span>
+        <span>P</span>
+        <span>R</span>
+        <span>I</span>
+        <span>N</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+        <span>A</span>
+    </div>
+    <div class="description">
+        <span>Tengo un regalo especial para ti mi amor!!</span>
+    </div>
+        <span>Tengo un regalo especial para ti mi amor!!</span>
+    </div>
+    <div class="button">
+        <!-- Botón para reproducir música -->
+        <button id="play-button">Reproducir Música</button>
+        <!-- Botón para ver la sorpresa -->
+        <a href="FLORES.html">Haga clic para ver la sorpresa</a>
+    </div>
+
+    <!-- Audio elemento -->
+    <audio id="background-audio" loop>
+        <source src="img/Floricienta.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.getElementById('play-button').addEventListener('click', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(function(error) {
+                console.log('Error al intentar reproducir el audio: ', error);
+            });
+        });
+    </script>
+</body>
+</html>
