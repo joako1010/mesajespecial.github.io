@@ -8,10 +8,14 @@
     <title>FLORES</title>
 </head>
 
-</div>
+
+<body onclick="PlayAudio()">
+
 
   <h1 class="titulo">Estas flores amarillas son un reflejo de la alegría que traes a mi vida. <br> <br>
     Gracias por iluminar mis días con tu presencia.</h1>
+
+
 
     <div class="night"></div>
     <div class="flowers">
@@ -193,5 +197,25 @@
 
     </div>
     <script src="main.js"></script>
+
+  <audio id="musical" loop>
+    <source src="img/Floricienta.mp3" type="audio/mpeg">
+    este navergador 
+  </audio> 
+
+
+
+  <script>
+    function PlayAudio() {
+      document.getElementById("musical").play();
+
+    }
+
+    </script>
+
+
+
+
+
   </body>
 </html>
