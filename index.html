@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <title>FLORES</title>
     <style>
+        .sorpresa-message {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #0d0a0a;
+        }
+
         body {
             color: azure;
             width: 100%;
@@ -17,48 +26,41 @@
             justify-content: center;
             background-color: black;
         }
+
         .greetings {
             font-size: 6rem;
             font-weight: 900;
         }
+
         .description {
             font-size: 1.5rem;
             margin-bottom: 20px;
             color: #fbff00;
         }
+
         .button {
             margin-top: 20px;
         }
-        .button button {
+
+        .button button, .button a {
             background-color: yellow;
             border: none;
             padding: 10px 20px;
             font-size: 18px;
             cursor: pointer;
-            position: relative;
             border-radius: 20px;
             transition: background-color 0.3s ease-in-out;
             margin: 5px;
         }
-        .button button:hover {
+
+        .button button:hover, .button a:hover {
             background-color: orange;
             box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
         }
+
         .button a {
             text-decoration: none;
             color: #111;
-            display: inline-block;
-            background-color: yellow;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-            margin: 5px;
-        }
-        .button a:hover {
-            background-color: orange;
-            box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
         }
     </style>
 </head>
@@ -73,23 +75,43 @@
         <span>C</span>
         <span>E</span>
         <span>S</span>
-        <span>A</span>
+        <span>A 🌻💛</span> <!-- Agregado el girasol y corazón amarillo -->
     </div>
-    <div class="description">
-        <span>Tengo un regalo especial para ti mi amor!!</span>
-    </div>
-        <span>Tengo un regalo especial para ti mi amor!!</span>
-    </div>
+    
     <div class="button">
-        <!-- Botón para reproducir música -->
-        <button id="play-button">Reproducir Música</button>
+        <!-- Botón para reproducir música colocado debajo -->
+        <button id="play-button">REPRODUCIR</button>
+    </div>
+    
+    <div class="description">
+        <span>¡Tengo un regalo especial para ti mi amor!</span>
+    </div>
+
+    <div>
+        <span>Te quiero dedicar unas palabras:</span>
+        <p>
+
+Hoy, 21 de septiembre, comienza la primavera, una estación que simboliza el renacer de la naturaleza, el florecimiento de la vida, y no puedo evitar pensar en ti. Sé cuánto significa para ti este día, no solo porque amas las flores, sino porque representan todo lo bello y delicado que llevas dentro. Las flores amarillas, como las que tanto te gustan, son un reflejo de la luz y la calidez que traes a mi vida, y aunque este año no puedo dártelas en persona, quiero entregarte este pequeño gesto desde la distancia.
+
+Quiero que sientas cada pétalo como si estuviera en tus manos, cada aroma que imaginas es mi manera de estar contigo. Sé que para ti este día es especial, y lamento no poder estar físicamente a tu lado para entregarte las flores que tanto te hacen feliz. Pero más allá de la distancia, lo que importa es lo que siento por ti, y cómo tu amor ha cambiado mi vida.
+
+No puedo dejar de agradecerte por el increíble regalo adelantado que me diste para mi cumpleaños. Sabes, para mí siempre ha sido un día más, un día sin mayor trascendencia... Pero tú lograste darle un sentido distinto. Convertiste lo que hubiera sido un día cualquiera en uno de los más especiales que he vivido. Me hiciste sentir amado, comprendido, y me recordaste que, a tu lado, incluso los días más simples pueden transformarse en momentos memorables. Nunca pensé que alguien pudiera hacerme sentir así en mi cumpleaños, y por eso te estoy eternamente agradecido. Me has regalado mucho más que un detalle; me has dado un día que llevaré siempre en el corazón.
+
+Gracias por ser la persona que eres, por estar ahí cuando te necesito, y por darme la oportunidad de ser parte de tu vida. Cada día contigo es un regalo, y hoy, aunque sea a la distancia, quiero que sepas que te amo más de lo que las palabras pueden expresar.
+
+Felices flores, feliz primavera, y gracias por iluminar mi mundo.
+<p> 
+            
+    </div>
+
+    <div class="button">
         <!-- Botón para ver la sorpresa -->
         <a href="FLORES.html">Haga clic para ver la sorpresa</a>
     </div>
 
     <!-- Audio elemento -->
     <audio id="background-audio" loop>
-        <source src="img/Floricienta.mp3" type="audio/mpeg">
+        <source src="img/amor.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -101,5 +123,9 @@
             });
         });
     </script>
+
+    <span class="sorpresa-message">
+        Al ingresar a la sorpresa, deberá hacer clic en la pantalla mientras la visualiza.
+    </span>
 </body>
 </html>
